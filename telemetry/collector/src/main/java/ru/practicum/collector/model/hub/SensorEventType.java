@@ -1,4 +1,4 @@
-package ru.practicum.collector.model;
+package ru.practicum.collector.model.hub;
 
 public enum SensorEventType {
     LIGHT_SENSOR_EVENT,

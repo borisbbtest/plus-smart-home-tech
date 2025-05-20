@@ -1,4 +1,4 @@
-package ru.practicum.collector.model;
+package ru.practicum.collector.model.hub;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
