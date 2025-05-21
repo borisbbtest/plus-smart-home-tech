@@ -20,8 +20,8 @@ public class KafkaConsumerConfig {
 
     @Bean
     public ConsumerFactory<String, SensorEventAvro> sensorConsumerFactory() {
-        Map<String, Object> config = new HashMap<>();
 
+        Map<String, Object> config = new HashMap<>();
         config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         config.put(ConsumerConfig.GROUP_ID_CONFIG, "collector-sensor-group");
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
