@@ -1,4 +1,4 @@
-package ru.practicum.collector.model.hub;
+package ru.practicum.collector.model.sensor;
 
 import com.fasterxml.jackson.annotation.*;
 import io.swagger.v3.oas.annotations.media.Schema;
