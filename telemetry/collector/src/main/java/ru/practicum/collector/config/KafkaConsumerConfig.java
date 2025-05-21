@@ -13,6 +13,7 @@ import ru.yandex.practicum.kafka.telemetry.event.SensorEventAvro;
 import java.util.HashMap;
 import java.util.Map;
 
+
 @EnableKafka
 @Configuration
 public class KafkaConsumerConfig {
