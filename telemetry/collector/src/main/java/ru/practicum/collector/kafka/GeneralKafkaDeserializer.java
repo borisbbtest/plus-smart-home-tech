@@ -1,7 +1,10 @@
 package ru.practicum.collector.kafka;
 
-import org.apache.avro.io.*;
-import org.apache.avro.specific.*;
+import org.apache.avro.io.BinaryDecoder;
+import org.apache.avro.io.DatumReader;
+import org.apache.avro.io.DecoderFactory;
+import org.apache.avro.specific.SpecificDatumReader;
+import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.common.serialization.Deserializer;
 
 import java.io.IOException;
@@ -16,7 +19,8 @@ public class GeneralKafkaDeserializer<T extends SpecificRecordBase> implements D
     }
 
     // Для Kafka (через newInstance)
-    public GeneralKafkaDeserializer() {}
+    public GeneralKafkaDeserializer() {
+    }
 
     @Override
     @SuppressWarnings("unchecked")
@@ -46,5 +50,6 @@ public class GeneralKafkaDeserializer<T extends SpecificRecordBase> implements D
     }
 
     @Override
-    public void close() {}
+    public void close() {
+    }
 }

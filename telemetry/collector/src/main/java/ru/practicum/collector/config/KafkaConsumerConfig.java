@@ -2,15 +2,17 @@ package ru.practicum.collector.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
-import org.springframework.kafka.config.*;
-import org.springframework.kafka.core.*;
-import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
+import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
+import org.springframework.kafka.core.ConsumerFactory;
+import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import ru.practicum.collector.kafka.GeneralKafkaDeserializer;
 import ru.yandex.practicum.kafka.telemetry.event.SensorEventAvro;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 @EnableKafka
 @Configuration

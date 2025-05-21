@@ -7,7 +7,10 @@ import ru.practicum.collector.model.hub.ScenarioRemovedEvent;
 
 public interface HubEventService {
     void send(DeviceAddedEvent event);
+
     void send(DeviceRemovedEvent event);
+
     void send(ScenarioAddedEvent event);
+
     void send(ScenarioRemovedEvent event);
 }
