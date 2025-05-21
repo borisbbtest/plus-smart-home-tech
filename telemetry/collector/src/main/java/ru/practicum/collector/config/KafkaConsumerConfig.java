@@ -10,7 +10,6 @@ import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import ru.practicum.collector.kafka.GeneralKafkaDeserializer;
 import ru.yandex.practicum.kafka.telemetry.event.SensorEventAvro;
-
 import java.util.HashMap;
 import java.util.Map;
 
